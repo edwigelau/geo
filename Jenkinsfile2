@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('all the maven commands'){
             steps{
-                sh 'mvn clean test compile install package'
+                sh 'mvn clean compile install package'
             }
             
         }
